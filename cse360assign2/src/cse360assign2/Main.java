@@ -6,64 +6,64 @@ public class Main{
 		Calculator trial = new Calculator();
 		int results;
 		
-		trial.add(2);
+		trial.subtract(120);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.divide(6);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.multiply(24);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.add(23);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		String hist;
+		hist = trial.getHistory();
+		System.out.println(hist);
+		
+		trial.add(900);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.subtract(105);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.divide(3);
+		results = trial.getTotal();
+		System.out.println(results);
+		
+		trial.multiply(3);
 		results = trial.getTotal();
 		System.out.println(results);
 		
 		trial.subtract(1);
 		results = trial.getTotal();
 		System.out.println(results);
-
-		trial.multiply(60);
+		
+		trial.add(3);
 		results = trial.getTotal();
 		System.out.println(results);
-
-		trial.divide(2);
-		results = trial.getTotal();
-		System.out.println(results);
-
-		trial.add(134);
-		results = trial.getTotal();
-		System.out.println(results);
-
-		trial.subtract(63);
-		results = trial.getTotal();
-		System.out.println(results);
-
+		
 		trial.divide(0);
 		results = trial.getTotal();
 		System.out.println(results);
-
-		trial.add(17);
-		results = trial.getTotal();
-		System.out.println(results);
-
-		trial.multiply(21);
+		
+		trial.add(19832);
 		results = trial.getTotal();
 		System.out.println(results);
 		
-		trial.subtract(123);
+		trial.multiply(0);
 		results = trial.getTotal();
 		System.out.println(results);
 		
-		trial.divide(12);
-		results = trial.getTotal();
-		System.out.println(results);
+		hist = trial.getHistory();
+		System.out.println(hist);
 		
-		trial.divide(2);
-		results = trial.getTotal();
-		System.out.println(results);
-		
-		trial.subtract(21);
-		results = trial.getTotal();
-		System.out.println(results);
-		
-		trial.multiply(13);
-		results = trial.getTotal();
-		System.out.println(results);
-		
-		trial.add(100);
-		results = trial.getTotal();
-		System.out.println(results);
 	}
 }

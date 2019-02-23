@@ -12,8 +12,9 @@ package cse360assign2;
 public class Calculator {
 
 	private int total;
+	private String history = "0";
 	/**
-	 * The main calculator function
+	 * This sets the total to 0 originally
 	 */
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
@@ -31,6 +32,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total = total + value;
+		history += " + " + value;
 	}
 	/**
 	 * This function is to subtract a value from the total
@@ -38,6 +40,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total = total - value;
+		history += " - " + value;
 	}
 	/**
 	 * This function is to multiply the total by a number
@@ -45,6 +48,7 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total = total * value;
+		history += " * " + value;
 	}
 	/**
 	 * This function is to divide the total by a number
@@ -55,12 +59,13 @@ public class Calculator {
 			total = 0;
 		else
 			total = total / value;
+		history += " / " + value;
 	}
 	/**
 	 * This function is to get the history of computations
 	 * @return returns the history that has occured
 	 */
 	public String getHistory () {
-		return "";
+		return history;
 	}
 }
